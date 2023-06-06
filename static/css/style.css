@@ -1,0 +1,306 @@
+    /*Отключаем отступы на всём элементе*/
+    body {
+        margin:0;
+    }
+
+    /* Отключаем scrollbar (Полоса сбоку для того, чтобы листать) */
+    ::-webkit-scrollbar {
+     display: none;
+    }
+
+   /* Стилизация нашей шапки */
+   /* Шрифты в шапке  */
+    .navbar-brand-font {
+        font-family: 'Rum Raisin', sans-serif;
+        font-size: 5vw
+    }
+    /*Стилизация значка tattoo*/
+
+    .nav-logo-border{
+    border: 2px solid #1C1C1C;
+    border-radius: 15%;
+    }
+
+    .nav-item-font {
+        font-family: 'Arial black', "Gadget", sans-serif;
+        font-size: 2vw
+    }
+    /* Конец шрифтов в шапке */
+
+    /* Задний фон шапки */
+    .nav-background { 
+        background-color: white;
+    }
+    /* Позиционирование кнопок */
+    .nav-item-position {
+        padding-right: 2.5rem;
+        padding-left: 0.5rem;
+    }
+
+    .nav-item-margin-left {
+        margin-left: 70%;
+    }
+
+    .nav-brand-margin-left {
+        margin-left: 5%;
+    }
+
+    /* Добавление указателя наведённой кнопки */
+    .nav-item {
+        text-decoration: none;
+        font: 20px/40px Roboto, sans-serif;
+        position: relative;
+        transition: all .2s ease;
+    }
+
+    .nav-item:after {
+        content: '';
+        position: absolute;
+        border: 10px solid darkgray;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        left: calc(37% - 5px);
+        transition: all .2s ease;
+        bottom: -5px;
+        opacity: 0;
+    }
+
+    .nav-item:hover {
+        color: darkgray;
+        text-shadow: 0 0 1px darkgray;
+    }
+
+    .nav-item:hover:after {
+        bottom: 0;
+        opacity: 1;
+    }
+    /* Конец стилизации нашей шапки */
+
+    /* Задний фон главной страницы */
+    .bg-page1 {
+        /*margin-top:5.6vw; */
+        background-image: url(../images/tattoobackground.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding-bottom: 60%;
+    }
+
+    /* Стилизация названия нашей кофейни на главной странице  */
+    .text-name {
+        position: absolute;
+        margin-left: 19%;
+        margin-top: 5%;
+        font-family: 'arial black', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 9vw;
+        line-height: 120px;
+        color: #FFFFFF;
+        text-shadow: 5px 5px 5px black;
+    }
+
+    /* Стилизация лозунга на главной странице */
+    .sub-text-name {
+        position: absolute;
+        margin-left: 17%;
+        font-family: 'Arial black', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 4vw;
+        line-height: 130px;
+        color: #FFFFFF;
+        text-shadow: 3px 3px 3px black;
+    }
+
+    /* Позиционирование нашей кнопки на главной странице */
+    .btn-position {
+        position: absolute;
+        margin-left: 40%;
+        margin-top: 32%;
+    }
+
+    /* Стиль нашей кнопки на главной странице */
+    .btn-style {
+        font-family: 'Roboto Slab', serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.8vw;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    @media screen and (max-width: 552px) {
+    .btn-style {
+    font-weight: 700;
+    font-size: 2.8vw;
+    }
+    }
+
+    /* Задаём общий стиль тексту, задний фон для всего блока контактов */
+    .contact {
+        font-family: 'Roboto Slab', serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.5vw;
+        color: white;
+        background-image: url(../images/contactbg6.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding-bottom: 10%;
+    }
+
+/*Стилизация блока "время работы"*/
+.time-work{
+border: 1px solid #eee;
+border-radius: 5%;
+width: 90%;
+background-color: rgba(68, 45, 37, 0.3);
+color: #fff;
+text-shadow: 3px 3px 3px darkgray;
+}
+    /* Стилизация и позиционирование кнопок "соц-сети" */
+    .navbar-brand-contact {
+        border-radius: 100%;
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .navbar-brand-contact img {
+  
+        margin-top: 2%;
+    }
+
+    /* Конец стилизации и позиционирования кнопок "соц-сети" */
+    /* Стилизация слова "Контакт" */
+    .contact h1 {
+        margin-left: 41%;
+        font-family: 'Roboto Slab', serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 4vw;
+        color: black;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    /* Позиционирование элементов блока контактов  */
+    .contact-position {
+        margin-left: 5%;
+    }
+
+    /* Настройка размеров шрифта для отдельных элементов блока контактов */
+    .contact p1 { 
+        font-weight: 700;
+    }
+    .contact p2 {
+        font-weight: 700;
+    }
+    .contact p3 {
+        font-weight: 700;
+    }
+    .contact p4 {
+        font-weight: 700;
+    }
+
+    /* Конец настройки размеров шрифта для отдельных элементов блока контактов */
+    /* Адаптивный iframe для гугл карт */
+    .google-maps-position iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 90%;
+        height: 100%;
+
+    }
+
+    /* Позиционирование гугл карт */
+    .google-maps-position {
+        position: relative;
+        padding-bottom: 20%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+    }
+
+    /* Сдвигаем текст от гугл карт влево */
+    .adress {
+        margin-left: 8%;
+    }
+
+    /* Задний фон для формы*/
+    .form-style {
+        background-image: url(../images/messagebg1.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding-bottom: 4%;
+    }
+
+    /* Выравниваем размер формы*/
+    .row > * {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-top: var(--bs-gutter-y);
+    }
+
+    /* Настрйока подвала нашего сайта */
+    .copyright {
+        text-align: center;
+        text-color: #F5F5F5 ;
+        background-color: black;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    /* Стиль отключённой кнопки */
+    .btn-disable {
+        user-select: none !important;
+        background-color: #ccc !important;
+        cursor: default !important;
+        outline: none !important;
+        pointer-events: none !important;
+    }
+
+/*Стилизуем кнопку "наверх"*/
+#top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border: none;
+    outline: none;
+    background-color: #F5F5F5;
+    color; #F5F5F5 ;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 24pt;
+    font-weight: bold;
+    z-index:99;
+}
+
+/*Поведение при наведении мыши*/
+
+#top-btn: hover {
+    background-color: #ffc107;
+    color: #dc33545;
+}
+
+
+/* включаем только в случае, если хотим сделать нашу "шапку" плавающей
+.head {
+    width: 100%;
+    top: 0%;
+    position: fixed;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    z-index: 100;
+}
+
+nav {
+    position: sticky;
+}
+*/
+
