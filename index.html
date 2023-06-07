@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <!-- Здесь мы указываем название, которое будет отображаться во вкладках браузера -->
     <title>Tattoo Beast</title>
-    <link rel="shortcut icon" href="../static/images/logo2.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Images/logo2.png" type="image/x-icon">
     <!-- Добавляет иконку во вкладку нашего браузера -->
     <!-- Подключение бутстрап - начало -->
     <!-- Настройка viewport -->
@@ -31,23 +31,14 @@
     <!-- Подключение Awesome fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <!-- Подключение наших стилей/скриптов и т.п --------------------------------------------- -->
-    <link rel="stylesheet" href="../static/css/style.css" type="text/css"/>  <!-- файл стилей  -->
-    <script type="text/javascript" src="../static/js/contact.js"></script>  <!-- файл скрипта проверки формы  -->
-    <script type="text/javascript" src="../static/js/top.js"></script>  <!-- файл скрипта наверх  -->
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>  <!-- файл стилей  -->
+    <script type="text/javascript" src="js/contact.js"></script>  <!-- файл скрипта проверки формы  -->
+    <script type="text/javascript" src="js/top.js"></script>  <!-- файл скрипта наверх  -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <!-- ------------------------------------------------------------------------------------- -->
     <!-- Подключение Google Font шрифтов -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300&family=Rum+Raisin&display=swap');
-
-
-
-
-
-
-
-
-
     </style>
 </head>
 <!-- Скелет нашего сайта -->
@@ -57,7 +48,7 @@
     <!-- шапка стилизованная бутстрапом -->
     <div class="head">
         <!-- код шапки -->
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar fixed-top navbar-expand-lg bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><b class="text-dark">Tattoo Beast</b></a><img class="nav-logo-border"
                                                                                                width="50"
@@ -125,10 +116,10 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../static/Images/slide1.png" class="d-block w-100" alt="...">
+                <img src="Images/slide1.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="../static/Images/slide2.png" class="d-block w-100" alt="...">
+                <img src="Images/slide2.png" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -164,27 +155,24 @@
 
                     <div class="card-group"><!--Добавление карточек в аккордион-->
                         <div class="card">
-                            <img src="../static/Images/ezkiz.jpg" class="card-img-top" alt="...">
+                            <img src="Images/ezkiz.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Разработка эскиза</h5>
                                 <p class="card-text">Вместе с вами сможем создать индивидуальный рисунок.</p><p><button type="button" class="btn btn-dark">Создать</button></p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="../static/Images/tattooprocess.jpg " width="1280" height="200" class="card-img-top" alt="...">
+                            <img src="Images/tattooprocess.jpg " width="1280" height="200" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Тату</h5>
                                 <p class="card-text">Воплотим вашу идею в жизнь, следуя всем правилам процесса нанесения тату.</p><p><button type="button" class="btn btn-dark">Воплотить</button></p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="../static/Images/retattoo.jpeg" width="1280" height="200" class="card-img-top" alt="...">
+                            <img src="Images/retattoo.jpeg" width="1280" height="200" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Перекрытие</h5>
                                 <p class="card-text">Поможем исправить некачественную работу или скрыть "ошибку" прошлого</p><p><button type="button" class="btn btn-dark">Исправить</button></p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
                         </div>
                     </div>
@@ -226,10 +214,10 @@
                 <!--Кнопки с иконками-->
                 <span class="my-contact">
                     <a class="navbar-brand-contact" href="#">
-                        <img src="../static/images/vk.svg" alt="Мы в VK" width="50" height="50">
+                        <img src="images/vk.svg" alt="Мы в VK" width="50" height="50">
                     </a>
                     <a class="navbar-brand-contact" href="#">
-                        <img src="../static/images/tiktok.svg" alt="Мы в VK" width="50" height="50">
+                        <img src="images/tiktok.svg" alt="Мы в VK" width="50" height="50">
                     </a>
                 </span>
             </div>
@@ -280,18 +268,6 @@
             window.onload = function () {
                 checkParams();
             };
-
-
-
-
-
-
-
-
-
-
-
-
 </script>
 <!-- Конец обновления скриптов -->
 </body>
